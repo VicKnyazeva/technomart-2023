@@ -315,6 +315,11 @@ input[type="search"]::-webkit-search-cancel-button {
     column-gap: 8px;
     grid-template-columns: [nav-1] auto [nav-2] auto;
     justify-content: right;
+    margin-right: 2px;
+}
+
+.user-navigation.logged-in {
+    margin-right: 3px;
 }
 
 .user-navigation-link {
@@ -377,7 +382,7 @@ input[type="search"]::-webkit-search-cancel-button {
     font-weight: 400;
     text-transform: none;
     letter-spacing: normal;
-    padding: 10px 5px 11px 5px;
+    padding: 10px 5px 11px 11px;
 }
 
 .user-navigation-link.profile::before {
@@ -399,7 +404,7 @@ input[type="search"]::-webkit-search-cancel-button {
     width: 22px;
     box-sizing: border-box;
     padding: 14px 0 11px 5px;
-    margin-right: 4px;
+    /*margin-right: 4px;*/
 }
 
 .user-navigation-link.logout::before {
@@ -544,7 +549,7 @@ input[type="search"]::-webkit-search-cancel-button {
 
 .bookmarks {
     padding-left: 36px;
-    margin-right: 7px;
+    margin-right: 3px;
 }
 
 /* при пустой корзине включаем этот стиль
@@ -571,7 +576,7 @@ input[type="search"]::-webkit-search-cancel-button {
 
 .basket {
     padding-left: 36px;
-    margin-right: 25px;
+    margin-right: 18px;
 }
 
 /* при пустой корзине включаем этот стиль
