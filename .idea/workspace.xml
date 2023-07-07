@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="13642bc1-9470-461f-a7e9-f026fd2ba847" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/catalog/red-button.svg" beforeDir="false" afterPath="$PROJECT_DIR$/images/catalog/red-button.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/icons/cart-white.svg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/styles.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +41,12 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\__work\_____GitHub\HTML_Academy\technomart-2023\images" />
+      <recent name="C:\__work\_____GitHub\HTML_Academy\technomart-2023\images\catalog" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -52,7 +55,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1688630185701</updated>
-      <workItem from="1688630192109" duration="49338000" />
+      <workItem from="1688630192109" duration="50214000" />
     </task>
     <servers />
   </component>
