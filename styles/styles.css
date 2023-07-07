@@ -969,8 +969,8 @@ input[type="search"]::-webkit-search-cancel-button {
 
 .catalog-container {
     display: grid;
-    grid-template-columns: 220px 3fr;
-    column-gap: 79px;
+    grid-template-columns: 220px auto;
+    column-gap: 75px;
 }
 
 .catalog-title {
@@ -1298,6 +1298,7 @@ input[type="search"]::-webkit-search-cancel-button {
 /******* Select Control ********/
 .catalog-sorting-set {
     width: 280px;
+    margin-left: 4px;
 }
 
 .sorting-select {
@@ -1400,8 +1401,6 @@ input[type="search"]::-webkit-search-cancel-button {
 
 .product-card {
     font-family: "PT Sans", sans-serif;
-    width: 262px;
-    margin: 0 4px;
     position: relative;
     background-color: transparent;
 }
@@ -1412,7 +1411,7 @@ input[type="search"]::-webkit-search-cancel-button {
     flex-direction: column;
 }
 
-.catalog-item .product-card.new::before {
+.catalog-item.new::before {
     content: "new";
     display: flex;
     position: absolute;
@@ -1431,13 +1430,14 @@ input[type="search"]::-webkit-search-cancel-button {
     font-weight: 700;
     letter-spacing: 2px;
     text-transform: uppercase;
-    background-color: #EE3643;
+    /*background-color: #EE3643;*/
+    background-color: blue;
     background-repeat: no-repeat;
     background-position: 0 0;
     z-index: 100;
 }
 
-.catalog-item .product-card.new {
+.catalog-item.new {
     overflow: hidden;
 }
 
@@ -1446,10 +1446,9 @@ input[type="search"]::-webkit-search-cancel-button {
     font-size: 14px;
     line-height: 18px;
     font-weight: 400;
-    text-align: center;
     text-transform: uppercase;
     display: none;
-    padding-top: 60px;
+    padding-top: 62px;
     box-sizing: border-box;
     flex-direction: column;
 }
@@ -1465,9 +1464,11 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 .product-card-image {
+    display: block;
     width: 216px;
     height: 180px;
-    margin: 27px 43px 14px 18px;
+    margin: 27px 0 14px 26px;
+    box-sizing: border-box;
 }
 
 .product-card-title {
@@ -1478,8 +1479,9 @@ input[type="search"]::-webkit-search-cancel-button {
     line-height: 27px;
     color: #293449;
     text-decoration: none;
-    margin: 0 47px 12px 38px;
+    padding: 0 40px 12px 40px;
     text-align: center;
+    box-sizing: border-box;
 }
 
 .old-price {
@@ -1488,10 +1490,11 @@ input[type="search"]::-webkit-search-cancel-button {
     font-weight: 700;
     line-height: 18px;
     letter-spacing: 2px;
-    margin: 0 0 12px 0;
-    padding: 0 0 0 95px;
+    margin: 0;
+    padding: 0 40px 12px 40px;
     text-decoration-line: line-through;
     text-transform: uppercase;
+    text-align: center;
 }
 
 .old-price.empty {
@@ -1511,7 +1514,7 @@ input[type="search"]::-webkit-search-cancel-button {
     background-position: 0 0;
     box-sizing: border-box;
     padding: 11px 40px 11px 29px;
-    margin: 0 0 21px 57px;
+    margin: 0 0 21px 65px;
 
 }
 
@@ -1519,9 +1522,10 @@ input[type="search"]::-webkit-search-cancel-button {
 .button-buy {
     display: block;
     width: 135px;
-    margin: 0 auto 11px 70px;
+    margin: 0 auto 11px 64px;
     box-sizing: border-box;
     border-radius: 2px;
+    text-align: center;
 }
 
 .button-buy {
@@ -1544,6 +1548,7 @@ input[type="search"]::-webkit-search-cancel-button {
     border: 2px solid #63A63E;
     background-color: #FFFFFF;
     color: #32425C;
+    padding: 9px 20px;
 }
 
 .button-bookmarks:hover {
