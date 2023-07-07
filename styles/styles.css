@@ -612,31 +612,20 @@ input[type="search"]::-webkit-search-cancel-button {
 
 /************** Page Body Section **************/
 .promo-advantages {
-    padding: 52px 0 20px 0;
+    padding: 52px 0 50px 0;
 }
 
 .promo-advantages-list {
-    /*display: grid;
-    grid-template-columns: [ac1] 1fr [ac2] 1fr [ac3] 1fr;
-    grid-template-rows: [ar1] auto [ar2] auto [ar3] auto;
-    row-gap: 27px;
-    column-gap: 30px;
-    width: 1170px;
-    margin: 0 auto 0 auto;
-    padding: 0;
-    list-style: none;
-    align-items: start;*/
-
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: 30px;
     grid-row-gap: 27px;
     grid-auto-flow: row dense;
-
     width: 1170px;
     margin: 0 auto 0 auto;
     padding: 0;
     list-style: none;
+    align-items: start;
 }
 
 .promo-advantages-item {
@@ -1026,7 +1015,7 @@ input[type="search"]::-webkit-search-cancel-button {
     min-height: 40px;
     box-sizing: border-box;
     margin-bottom: 6px;
-    padding: 20px 20px 18px 20px;
+    padding: 18px 20px 18px 20px;
     background-color: #F7F3EC;
     border-radius: 2px;
 }
@@ -1044,7 +1033,7 @@ input[type="search"]::-webkit-search-cancel-button {
 
 .tumbler {
     position: absolute;
-    top: 11px;
+    top: 9px;
     left: 0;
     width: 20px;
     height: 20px;
@@ -1080,6 +1069,7 @@ input[type="search"]::-webkit-search-cancel-button {
 
 .price-range .filter-title {
     margin: 0 0 10px 0;
+    padding: 0;
 }
 
 .price-controls {
@@ -1097,7 +1087,7 @@ input[type="search"]::-webkit-search-cancel-button {
 .min-price,
 .max-price {
     width: 47px;
-    height: 18px;
+    height: 20px;
     padding: 10px 24px;
     margin: 0;
     border: 0;
@@ -1118,15 +1108,15 @@ input[type="search"]::-webkit-search-cancel-button {
 /******* Checkbox Control ********/
 
 .manufacturers .filter-title {
-    margin: 0 0 17px 0;
+    margin: 0 0 16px -1px;
 }
 
 .filter.manufacturers {
-    margin: 0 0 13px 0;
+    margin: 0 0 25px 0;
 }
 
 .manufacturers-list {
-    margin: 0 0 0 2px;
+    margin: 0;
     padding: 0;
 }
 
@@ -1143,18 +1133,18 @@ input[type="search"]::-webkit-search-cancel-button {
 .manufacturers-list-item-control {
     position: relative;
     display: block;
-    padding: 0 0 0 35px;
+    padding: 0 0 0 36px;
 }
 
 .control-mark {
     position: absolute;
     top: 0;
     left: 0;
-    width: 20px;
-    height: 20px;
+    width: 21px;
+    height: 21px;
     border-radius: 2px;
     background-color: #FFFFFF;
-    border: 2px solid #32425C;
+    border: 2px solid #3D546F;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -1186,21 +1176,17 @@ input[type="search"]::-webkit-search-cancel-button {
 
 .control-input[type="checkbox"]:checked:hover + .control-mark {
     background-image: url("../images/icons/checkbox-on-hover.svg");
-    background-repeat: no-repeat;
-    background-position: 0 -1px;
-    border: none;
 }
 
 .control-input[type="checkbox"]:disabled + .control-mark {
-    border-color: rgba(50, 66, 92, 0.2);
+    background-image: url("../images/icons/checkbox-off.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    border: none;
 }
 
 .control-input[type="checkbox"]:disabled:checked + .control-mark {
-    color: rgba(0, 0, 0, 0.4);
     background-image: url("../images/icons/checkbox-on-disabled.svg");
-    background-repeat: no-repeat;
-    background-position: 0 -1px;
-    border: none;
 }
 
 .control-input[type="checkbox"]:disabled + .control-mark + .control-label {
@@ -1215,18 +1201,18 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 .supply .filter-title {
-    margin: 0 0 18px 0;
+    margin: 0 0 18px 3px;
 }
 
 .supply-list {
-    margin: 0 0 0 2px;
+    margin: 0 0 0 5px;
     padding: 0;
 }
 
 .supply-list-item {
     list-style: none;
     margin: 0 0 18px 0;
-    padding: 0 0 3px 0;
+    padding: 0 0 2px 0;
     font-family: "PT Sans", sans-serif;
     font-size: 14px;
     font-weight: 400;
@@ -1236,7 +1222,11 @@ input[type="search"]::-webkit-search-cancel-button {
 .supply-list-item-control {
     position: relative;
     display: block;
-    padding: 0 0 0 35px;
+    padding: 0 0 0 36px;
+}
+
+.supply-list-item-control .control-label {
+    padding: 2px 0 0 0;
 }
 
 .control-mark-radio {
@@ -1289,7 +1279,7 @@ input[type="search"]::-webkit-search-cancel-button {
     color: #32425C;
     border-radius: 2px;
     margin: 0 0 50px 0;
-    padding: 11px 0 7px 0;
+    padding: 10px 0 8px 2px;
 }
 
 .filter-button:focus {
