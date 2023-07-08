@@ -116,6 +116,21 @@ body {
     background-color: #518534;
 }
 
+.red {
+    background-color: #ee3643;
+}
+
+.red:focus {
+    background-color: #ba2732;
+}
+
+.red:hover {
+    background-color: #cA2c37;
+}
+
+.red:active {
+    background-color: #ba2732;
+}
 
 /*************************************************/
 /************** Page Header Section **************/
@@ -1683,31 +1698,20 @@ input[type="search"]::-webkit-search-cancel-button {
     cursor: not-allowed;
 }
 
-.pagination-item.button-more {
-    background-color: #ee3643;
-    border-radius: 2px;
-    margin-left: 9px;
+.pagination-item:last-child {
+    background-color: transparent;
 }
 
-.pagination-item.button-more .pagination-link {
+.pagination-item .button-more {
+    display: block;
     font-size: 14px;
     color: #ffffff;
     line-height: 18px;
     text-transform: uppercase;
     letter-spacing: 2px;
     padding: 14px 36px 13px 38px;
-}
-
-.pagination-item.button-more:focus-within {
-    background-color: #cA2c37;
-}
-
-.pagination-item.button-more:hover {
-    background-color: #cA2c37;
-}
-
-.pagination-item.button-more:active {
-    background-color: #bA2732;
+    border-radius: 2px;
+    margin-left: 9px;
 }
 
 /******* Catalog Pagination End **********/
@@ -1724,7 +1728,7 @@ input[type="search"]::-webkit-search-cancel-button {
 .services-container {
     width: 1170px;
     margin: 0 auto;
-    padding: 52px 0 52px 0;
+    padding: 52px 0 42px 0;
     font-family: "PT Sans", sans-serif;
     font-weight: 400;
     line-height: 24px;
@@ -1810,6 +1814,64 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 /****** Services End ******/
+
+.about-company {
+    width: 100%;
+    background-color: #ffffff;
+}
+
+.about-company-container {
+    display: flex;
+    justify-content: space-between;
+    width: 1170px;
+    margin: 0 auto;
+    padding: 52px 0 52px 0;
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.about-company-item.about-us {
+    width: 500px;
+}
+
+.about-company-item .title {
+    font-family: "Fira Sans", sans-serif ;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 42px;
+    color: #293449;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0 0 22px 0;
+}
+
+.about-company-item .description {
+    margin: 0 0 26px 0;
+    padding: 0;
+}
+
+.about-button {
+    display: inline-block;
+    border-radius: 2px;
+    padding: 14px 45px 13px 45px;
+    margin: 25px 0 0 0;
+}
+
+.about-company-item.our-contacts {
+    width: 500px;
+}
+
+.map {
+    display: block;
+    outline: none;
+    margin: 31px 0 0 0;
+}
+
+.map .map-image {
+    display: block;
+}
 
 
 
