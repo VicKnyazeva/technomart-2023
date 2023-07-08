@@ -226,9 +226,10 @@ body {
     margin: 0 auto 0 auto;
 }
 
-.page-header-logo {
+.page-header-logo,
+.page-footer-logo {
     grid-column-start: logo;
-    display: block;
+    display: inline-block;
     position: absolute;
     top: 0;
     left: 0;
@@ -241,7 +242,12 @@ body {
     box-shadow: 0 -5px 0 0 rgba(0, 0, 0, 0.24) inset;
 }
 
-.page-header-logo:focus {
+.page-footer-logo {
+    position: relative;
+}
+
+.page-header-logo:focus,
+.page-footer-logo:focus {
     outline: none;
 }
 
@@ -1876,13 +1882,97 @@ input[type="search"]::-webkit-search-cancel-button {
 
 
 /****************************************************/
-.page-footer-wrapper {
-    width: 1400px;
-    background-color: #32425C;
-}
+
 .page-footer {
-    box-sizing: border-box;
-    width: 1170px;
-    margin: 0 auto;
+    width: 100%;
 }
 
+.page-footer-item {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.page-footer-row:nth-child(2n+1) {
+    background-color: #32425c;
+}
+
+.page-footer-row {
+    background-color: #293449;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 115px;
+    width: 1170px;
+    margin: 0 auto;
+    padding: 0;
+    color: #f3F7f9;
+}
+
+.footer-content-item {
+    flex-basis: 50%;
+    margin: 0;
+    padding: 0;
+}
+.footer-content-item:nth-child(2n) {
+    text-align: right;
+}
+
+.footer-social-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    gap: 5px;
+}
+
+.footer-social-item {
+    list-style: none;
+    box-sizing: border-box;
+    flex-basis: 36px;
+    width: 36px;
+    height: 36px;
+    margin: 0;
+    padding: 0;
+}
+
+.button-socials {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+}
+
+.button-socials.pinterest {
+    background-image: url(../images/icons/pin.svg);
+    background-repeat: no-repeat;
+}
+
+.button-socials.pinterest:focus,
+.button-socials.pinterest:hover,
+.button-socials.pinterest:active {
+    background-image: url(../images/icons/pin-active.svg);
+}
+
+.button-socials.vk {
+    background-image: url(../images/icons/vk.svg);
+    background-repeat: no-repeat;
+}
+
+.button-socials.vk:focus,
+.button-socials.vk:hover,
+.button-socials.vk:active {
+    background-image: url(../images/icons/vk-active.svg);
+}
+
+.button-socials.vsco {
+    background-image: url(../images/icons/Vsco.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.button-socials.vsco:focus,
+.button-socials.vsco:hover,
+.button-socials.vsco:active {
+    background-image: url(../images/icons/Vsco-active.svg);
+}
