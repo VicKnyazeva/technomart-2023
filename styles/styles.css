@@ -2015,19 +2015,18 @@ input[type="search"]::-webkit-search-cancel-button {
     display: inline-block;
     width: 145px;
     margin: 39px 1px 0 -5px;
-    padding-left: 25px;
     border-radius: 2px;
+    padding-top: 11px;
     box-sizing: border-box;
     text-align: center;
 }
 
 .button-login::before {
     content: "";
-    position: absolute;
-    top: 13px;
-    left: 24px;
-    width: 15px;
-    height: 15px;
+    display: inline-block;
+    margin: 0 15px -3px -8px;
+    width: 16px;
+    height: 16px;
     background-image: url('../images/icons/login.svg');
     background-repeat: no-repeat;
     background-position: 0 0;
