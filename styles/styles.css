@@ -1880,9 +1880,9 @@ input[type="search"]::-webkit-search-cancel-button {
     display: block;
 }
 
-
-
 /****************************************************/
+
+/*** Page Footer Start ***/
 
 .page-footer {
     width: 100%;
@@ -1916,10 +1916,12 @@ input[type="search"]::-webkit-search-cancel-button {
     margin: 0;
     padding: 0;
 }
+
 .footer-content-item:nth-child(2n) {
     text-align: right;
 }
 
+/*** Footer Contacts  Start ***/
 
 .footer-contacts-item {
     font-family: "PT Sans", sans-serif;
@@ -1958,6 +1960,15 @@ input[type="search"]::-webkit-search-cancel-button {
     color: #ffffff;
 }
 
+.footer-content-item .mail-to {
+    padding: 15px 0 0 0;
+    margin: 0;
+}
+
+.footer-contacts-item.caption {
+    margin: 0;
+    padding: 0 0 1px 0;
+}
 
 .footer-contacts-item.mail {
     display: inline-block;
@@ -1972,10 +1983,10 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 
-.footer-contacts-item.caption {
-    margin: 0;
-    padding: 0;
-}
+
+/*** Footer Contacts End ***/
+
+/*** Footer Socials Start ***/
 
 .socials {
     padding: 21px 0 34px 0;
@@ -2038,3 +2049,7 @@ input[type="search"]::-webkit-search-cancel-button {
 .button-socials.vsco:active {
     background-image: url(../images/icons/Vsco-active.svg);
 }
+
+/*** Footer Socials End ***/
+
+/*** Page Footer End ***/
