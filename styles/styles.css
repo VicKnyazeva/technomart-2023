@@ -100,7 +100,7 @@ body {
 }
 
 .green {
-    background-color: #63A63E;
+    background-color: #63a63e;
 }
 
 .green:focus {
@@ -109,7 +109,7 @@ body {
 }
 
 .green:hover {
-    background-color: #5FBB2D;
+    background-color: #5fbb2d;
 }
 
 .green:active {
@@ -1560,15 +1560,15 @@ input[type="search"]::-webkit-search-cancel-button {
 .button-buy {
     position: relative;
     background-color: #63A63E;
-    padding-left: 25px;
+    padding: 9px 0 7px 0;
+    line-height: 24px;
     border-radius: unset;
 }
 
 .button-buy::before {
     content: "";
-    position: absolute;
-    top: 13px;
-    left: 23px;
+    display: inline-block;
+    margin: 0 10px -2px -4px;
     width: 14px;
     height: 14px;
     background-image: url('../images/catalog/cart-small.svg');
@@ -1768,7 +1768,7 @@ input[type="search"]::-webkit-search-cancel-button {
     margin: 0 0 10px 0;
     padding: 24px 40px 51px 31px;
     background-color: #ffffff;
-    box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.15);
 }
 
 .services-list-item-title {
@@ -1871,6 +1871,222 @@ input[type="search"]::-webkit-search-cancel-button {
 
 /****************************************************/
 
+/*** User PopUp Start ***/
+
+.user-popup {
+    display: block;
+    position: absolute;
+    top: 13px;
+    right: 3px;
+    z-index: 120;
+    box-sizing: border-box;
+    text-align: left;
+    font-size: 16px;
+    line-height: 20px;
+    width: 360px;
+    border-radius: 2px;
+    background: #ffffff;
+    box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.15);
+    padding: 22px 29px 19px 31px;
+}
+
+.user-popup.login {
+    display: block;
+    padding-bottom: 35px;
+}
+
+.user-popup.profile {
+    display: none;
+    padding-bottom: 33px;
+}
+
+.user-popup .button-close {
+    position: absolute;
+    top: 19px;
+    right: 19px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    background: url("../images/icons/close-button.svg");
+}
+
+.user-popup .button-close:focus,
+.user-popup .button-close:hover,
+.user-popup .button-close:active {
+    border: none;
+    background: url("../images/icons/close-button-active.svg");
+}
+
+.user-popup-title {
+    font-family: "PT Sans", sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    color: #000000;
+    line-height: 30px;
+    text-transform: uppercase;
+    margin: 1px 0 45px 1px;
+}
+
+.user-popup.profile .user-popup-title {
+    margin-bottom: 34px;
+}
+
+.site-input {
+    width: 100%;
+    height: 100%;
+    color: #000000;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    white-space: nowrap;
+    padding: 9px 14px;
+    font-size: 16px;
+    outline: none;
+    border-radius: 2px;
+    border: 1px solid #c5c5c5;
+    font-family: "PT Sans", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 0 0 7px 0;
+}
+
+.site-input:focus {
+    border-color: #ffbf47;
+    box-shadow: none;
+    outline: 1px solid #ffbf47;
+}
+
+.site-input:hover {
+    border-color: #63a63e;
+}
+
+.site-input:active {
+    border-color: #3f5e72;
+}
+
+.site-input:disabled {
+    border-color: #e5e5e5;
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.site-checkbox {
+    position: relative;
+    display: block;
+    padding: 0 0 0 39px;
+    color: #000000;
+    font-family: "PT Sans", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+}
+
+.site-checkbox.remember-me {
+    display: inline-block;
+    width: auto;
+    margin-top: 5px;
+    padding-right: 20px;
+}
+
+.forget-password {
+    display: inline-block;
+    width: auto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    text-decoration: none;
+    outline: none;
+    color: #000000;
+    line-height: 18px;
+    padding-top: 2px;
+}
+
+.forget-password:focus,
+.forget-password:hover,
+.forget-password:active {
+    text-decoration: underline;
+}
+
+.button-login {
+    position: relative;
+    display: inline-block;
+    width: 145px;
+    margin: 39px 1px 0 -5px;
+    padding-left: 25px;
+    border-radius: 2px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.button-login::before {
+    content: "";
+    position: absolute;
+    top: 13px;
+    left: 24px;
+    width: 15px;
+    height: 15px;
+    background-image: url('../images/icons/login.svg');
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    opacity: 1;
+}
+
+.button-register,
+.button-logout  {
+    width: 145px;
+    border: 2px solid #63a63e;
+    background-color: #ffffff;
+    color: #32425C;
+    padding: 9px 0 9px 4px;
+    border-radius: 2px;
+}
+
+.button-logout  {
+    margin-top: 1px;
+}
+
+.button-register:hover,
+.button-logout:hover {
+    border-color: #3d546f;
+}
+
+.button-register:active,
+.button-logout:active {
+    border-color: #c5c5c5;
+    color: #c5c5c5;
+}
+
+.profile-link {
+    display: block;
+    color: #32425c;
+    font-family: "PT Sans", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+    outline: none;
+    margin: 0 0 23px 0;
+}
+
+.profile-link:focus,
+.profile-link:active,
+.profile-link:hover {
+    color: #000000;
+}
+
+.profile-link:focus,
+.profile-link:active {
+    text-decoration: underline;
+}
+
+/*** User PopUp End ***/
+
 /*** Page Footer Start ***/
 
 .page-footer {
@@ -1943,6 +2159,7 @@ input[type="search"]::-webkit-search-cancel-button {
     color: #ffffff;
     display: inline-block;
     text-decoration: none;
+    outline: none;
     margin: 0;
     padding: 0;
 }
@@ -1951,6 +2168,7 @@ input[type="search"]::-webkit-search-cancel-button {
 .footer-contacts-item.phone:hover,
 .footer-contacts-item.phone:active {
     color: #ffffff;
+    text-decoration: underline;
 }
 
 .footer-content-item .mail-to {
@@ -1967,12 +2185,14 @@ input[type="search"]::-webkit-search-cancel-button {
     display: inline-block;
     text-decoration: none;
     color: #ffd180;
+    outline: none;
 }
 
 .footer-contacts-item.mail:focus,
 .footer-contacts-item.mail:hover,
 .footer-contacts-item.mail:active {
     color: #ffbF47;
+    text-decoration: underline;
 }
 
 /*** Footer Contacts End ***/
@@ -2005,6 +2225,7 @@ input[type="search"]::-webkit-search-cancel-button {
     display: inline-block;
     width: 36px;
     height: 36px;
+    outline: none;
 }
 
 .button-socials.pinterest {
@@ -2044,5 +2265,77 @@ input[type="search"]::-webkit-search-cancel-button {
 /*** Footer Socials End ***/
 
 
+
+/*** Subscribe Form Start ***/
+
+.subscribe {
+    padding: 27px 0 0 0;
+}
+
+.subscribe-group {
+    display: flex;
+    flex-direction: row;
+}
+
+.subscribe-form {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    margin: 0;
+    padding: 0;
+}
+
+.label-subscribe {
+    color: #ffffff;
+    font-family: "PT Sans", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    padding: 2px 0;
+}
+
+.input-subscribe {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-color: #63a63e;
+    width: 223px;
+    height: 40px;
+    font-family: "PT Sans", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    padding-top: 8px;
+    padding-left: 15px;
+}
+
+.input-subscribe:active,
+.input-subscribe:focus {
+    z-index: 1;
+}
+
+.button-subscribe {
+    width: 40px;
+    height: 40px;
+    margin-left: -3px;
+    outline: none;
+    border-radius: 2px;
+    background-color: #63a63e;
+    background-image: url("../images/icons/cart-white.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.button-subscribe:focus,
+.button-subscribe:hover {
+    background-color: #5fbb2d;
+}
+
+.button-subscribe:active {
+    background-color: #518534;
+}
+
+/*** Subscribe Form End ***/
 
 /*** Page Footer End ***/

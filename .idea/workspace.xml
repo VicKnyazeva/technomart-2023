@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="13642bc1-9470-461f-a7e9-f026fd2ba847" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/images/icons/cart-white.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/icons/close-button-active.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/icons/close-button.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/styles/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/styles.css" afterDir="false" />
     </list>
@@ -37,8 +41,9 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/__work/_____GitHub/HTML_Academy/1022441-sedona-36",
+    "last_opened_file_path": "D:/technomart-2023",
     "list.type.of.created.stylesheet": "CSS",
+    "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -56,7 +61,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1688630185701</updated>
-      <workItem from="1688630192109" duration="94267000" />
+      <workItem from="1688630192109" duration="103904000" />
     </task>
     <servers />
   </component>
