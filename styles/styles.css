@@ -1891,7 +1891,7 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 .user-popup.login {
-    display: block;
+    display: none;
     padding-bottom: 35px;
 }
 
